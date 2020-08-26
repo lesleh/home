@@ -4,7 +4,7 @@ body, html {
 }
 
 body {
-  background-color: #af1440;
+  background: linear-gradient(45deg, blue, violet);
   color: #fff;
 }
 
@@ -12,4 +12,9 @@ body {
   height: 100vh;
   display: grid;
   place-items: center;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 72px;
 }
