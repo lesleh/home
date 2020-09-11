@@ -18,11 +18,11 @@ jobs:
         node-version: 14.x
     - run: yarn install
     - run: yarn run build
-    - name: Copy folder content recursively to remote
+    - name: Deploy site
       uses: garygrossgarten/github-action-scp@release
       with:
         local: build
-        remote: /var/www
+        remote: /var/www/html
         host: ${{ secrets.SSH_HOSTNAME }}
         username: ${{ secrets.SSH_USERNAME }}
         password: ${{ secrets.SSH_PASSWORD }}
