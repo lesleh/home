@@ -4,7 +4,9 @@ body, html {
 }
 
 body {
-  background: linear-gradient(45deg, blue, violet);
+  background: linear-gradient(to top right,#00ff,#00f0),
+              linear-gradient(to bottom right,#f0ff,#f0f0),
+              linear-gradient(to bottom left,#f00f,#f000);
   color: #fff;
 }
 
